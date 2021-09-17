@@ -4,36 +4,198 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="normalize.css" />
+    <link rel="stylesheet" href="style.css" />
     <title>Alina Nails Kostanay</title>
   </head>
   <body>
-    <header>
+    <header class="header">
       <div class="header__contact">
-        <div class="header__phone"></div>
-        <div class="header__social-media"></div>
+        <div class="container">
+          <div class="header__contact-inner">
+            <div class="header__phone">
+              <img src="./images/icons/phone.svg" alt="phone logo" />
+              <span class="header__phonenumber">+7 777 123 45 67</span>
+            </div>
+            <div class="header__social-media">
+              <img
+                src="./images/icons/instagram.svg"
+                alt="logo instagram"
+                class="header__social-item"
+              />
+              <img
+                src="./images/icons/telegram.svg"
+                alt="logo telegram"
+                class="header__social-item"
+              />
+              <img
+                src="./images/icons/whatsapp.svg"
+                alt="logo whatsapp"
+                class="header__social-item"
+              />
+            </div>
+          </div>
+        </div>
       </div>
       <div class="header__nav">
-        <div class="header__logo">Alina Nails</div>
-        <nav class="header__menu">
-          <ul class="header__items">
-            <li class="header__item">
-              <a class="header__link" href="">About</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Services</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Gallery</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Price</a>
-            </li>
-            <li class="header__item">
-              <a class="header__link" href="">Testimonials</a>
-            </li>
-          </ul>
-        </nav>
+        <div class="container">
+          <div class="header__logo">Alina Nails</div>
+          <nav class="header__menu">
+            <ul class="header__items">
+              <li class="header__item">
+                <a class="header__link" href="">About</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">Services</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">Gallery</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">Price</a>
+              </li>
+              <li class="header__item">
+                <a class="header__link" href="">Testimonials</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
       </div>
     </header>
+
+    <section class="promo">
+      <div class="container">
+        <h2 class="promo__title">Hundreds of Colors, Organic Nail Polish!</h2>
+        <p class="promo__text">
+          With its diverse list of members, professional equipment and lots of
+          tidy courts the.
+        </p>
+        <button class="btn promo__btn">Book now</button>
+      </div>
+    </section>
+
+    <section class="about">
+      <div class="container">
+        <div class="about__inner">
+          <div class="about__image"></div>
+          <div class="about__info">
+            <h2 class="about__title">About us…</h2>
+            <h3 class="about__subtitle">
+              “Every year we help thousands of women feel aand look even more
+              stylish!”
+            </h3>
+            <p class="about__text">
+              When you feel like your daily work routine really exhausted you,
+              feel free to come by.Our professional manicurists will do their
+              best to soothe and calm your body & mind!Choose any color of your
+              nail polish – and we will make it work for you!
+            </p>
+            <button class="btn about__btn">Book now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="care">
+      <div class="container">
+        <h2 class="care__title">Take Care of Your Nails</h2>
+        <span class="care__subtitle"> Paint Them Color Awesome! </span>
+        <button class="btn care__btn"></button>
+      </div>
+    </section>
+
+    <section class="services">
+      <div class="container">
+        <h2 class="services__title">Services</h2>
+        <div class="services__items">
+          <div class="services__item">
+            <h3 class="services__item-title">Manicure</h3>
+            <p class="services__item-text">
+              While hand and nail care is usually restricted to just a few
+              services, we’ve got a wide selection of various pedicure methods,
+              just as well as the overall hands skin care treatments…
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="gallery">
+      <div class="container">
+        <h2 class="gallery__title">Gallery</h2>
+      </div>
+    </section>
+
+    <section class="price">
+      <div class="container">
+        <div class="price__inner">
+          <h2 class="price__title">Price</h2>
+
+          <div class="price__items">
+            <div class="price__item">
+              <span class="price__name"> spring-summer </span>
+              <h3 class="price__kind">Manicure</h3>
+              <div class="price__hr"></div>
+              <div class="price__count">3500</div>
+              <p class="price__description">
+                Taking a good care of your feet and nails is essential. We
+                provide an ultimate, SPA induced services for refreshing your
+                health.
+              </p>
+              <button class="price__btn btn">book now</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="testimonials">
+      <div class="container">
+        <h2 class="testimonials__title">Testimonials</h2>
+        <div class="testimonials__carousel">
+          <div class="testimonials__items">
+            <div class="testimonials__item">
+              <img src="" alt="avatar" class="testimonials__avatar" />
+              <p class="testimonials__text">
+                While hand and nail care is usually restricted to just a few
+                services, we’ve got a wide selection of various pedicure
+                methods, just as well as the overall hands skin care treatments.
+              </p>
+              <span class="testimonials__name">Joane Stone</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__inner">
+          <div class="footer__items">
+            <div class="footer__item">
+              <img src="" alt="logo" class="footer__logo" />
+              <span class="footer__text"
+                >Hundreds of Colors, Organic Nail Polish!</span
+              >
+            </div>
+            <div class="footer__item">
+              <ul class="footer__contacts">
+                <li class="footer__contact">
+                  54421 Tennessee hwy., Alexandria, VA, USA, 22303
+                </li>
+                <li class="footer__contact">info@demolink.org</li>
+                <li class="footer__contact">+12 345 678 910</li>
+              </ul>
+            </div>
+            <div class="footer__item"></div>
+          </div>
+          <div class="footer__rights">
+            <span class="footer__allright"
+              >2021 © ALINA NAILS. ALL RIGHTS RESERVED
+            </span>
+          </div>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
