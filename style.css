@@ -8,7 +8,60 @@
   padding: 0 15px;
 }
 
+body {
+  position: relative;
+}
+
+/* Standart Object */
+.btn {
+  width: 200px;
+  height: 58px;
+  border-radius: 50px;
+  border: none;
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.btn:hover {
+  background-color: #000;
+}
+
+.btn:active {
+  transform: scale(0.9);
+}
+
+.title {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 79px;
+}
+
+.text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 24px;
+  color: #757575;
+}
+
+/* HEADER */
+
 .header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
 }
 
 .header__contact {
@@ -24,7 +77,7 @@
 }
 
 .header__phone {
-  font-family: Poppins, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 17px;
@@ -45,4 +98,314 @@
   justify-content: space-between;
   max-width: 90px;
   width: 100%;
+}
+
+/* font-family: 'PT Serif', serif; */
+
+.header__logo {
+  font-family: "PT Serif", serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-top: 30px;
+}
+
+.header__logosvg {
+  width: 60px;
+}
+
+.header__menu {
+}
+
+.header__items {
+  margin-top: 45px;
+  margin-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 0;
+  max-width: 455px;
+  width: 100%;
+}
+
+.header__item {
+  list-style-type: none;
+}
+
+.header__link {
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: #000000;
+  text-decoration: none;
+}
+
+.promo {
+  background-image: url("./images/header.jpg");
+  background-color: #f3f4f6;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.promo__inner {
+  padding-bottom: 245px;
+}
+
+.promo__title {
+  margin: 0;
+  padding-top: 240px;
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 60px;
+  line-height: 79px;
+  max-width: 640px;
+}
+
+.promo__text {
+  font-family: "Poppins", sans-serif;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 22px;
+  line-height: 33px;
+  max-width: 540px;
+  margin: 20px 0 60px 0;
+}
+
+.promo__btn {
+  background-color: #f64a5f;
+}
+
+/* ABOUT */
+
+.about {
+}
+
+.about__inner {
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: row;
+}
+
+.about__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.about__title {
+  margin-top: 0;
+  margin-bottom: 36px;
+}
+
+.about__subtitle {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 23px;
+  line-height: 30px;
+  letter-spacing: 0.03em;
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.about__text {
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.about__btn {
+  background-color: #f64a5f;
+}
+
+/* CARE */
+
+.care {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background-image: url(./images/care.jpg);
+  background-size: cover;
+}
+
+.care__inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: 800px;
+  width: 100%;
+}
+
+.care__title {
+  margin: 0;
+}
+
+.care__subtitle {
+  font-family: "PT Serif", serif;
+  font-style: italic;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 64px;
+  text-align: center;
+  color: #757575;
+  margin-top: 0;
+  margin-bottom: 45px;
+}
+
+.care__btn {
+  background-color: #f64a5f;
+}
+
+/* SERVICES */
+
+.services {
+}
+
+.services__inner {
+  padding-top: 300px;
+  padding-bottom: 390px;
+  background-image: url(./images/services.png);
+  background-repeat: no-repeat;
+  background-position: -10% 0;
+  background-size: contain;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+}
+
+.services__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.services__title {
+  margin-top: 0;
+  margin-bottom: 80px;
+}
+
+.services__item-title {
+  font-family: "PT Serif", serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  margin-top: 0;
+  margin-bottom: 16px;
+}
+
+.services__item-text {
+  margin: 0;
+}
+
+.services__info {
+  flex-basis: 50%;
+}
+
+/* GALLERY */
+.gallery {
+  background-image: url(./images/gallery.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.gallery__inner {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+/* PRICE */
+
+.price {
+  background-image: url(./images/price.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.price__inner {
+  padding-top: 90px;
+  padding-bottom: 90px;
+  display: flex;
+  flex-direction: column;
+}
+
+.price__title {
+  width: 50%;
+  margin-top: 0;
+  margin-bottom: 50px;
+  transform: translateX(100%);
+}
+
+.price__items {
+}
+
+.price__item {
+  width: 390px;
+  height: 600px;
+  background: #f64a5f;
+  border-radius: 25px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 80px 15px 45px 15px;
+}
+
+.price__name {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 14px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+
+.price__kind {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #ffffff;
+  margin-top: 0;
+}
+
+.price__hr {
+  width: 73px;
+  height: 3px;
+  background: #ffffff;
+}
+
+.price__btn {
+  color: #f64a5f;
+}
+
+.price__description {
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 1.3;
+  letter-spacing: 1px;
+  text-align: center;
+  margin-bottom: 45px;
+}
+
+/* testimonials */
+
+.testimonials {
+  background-image: url(./images/testimonials.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.testimonials__title {
+  width: 50%;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 50px;
+  transform: translateX(50%);
 }
