@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="slick.css">
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
     <title>Alina Nails Kostanay</title>
   </head>
   <body>
@@ -15,25 +17,33 @@
           <div class="header__contact-inner">
             <div class="header__phone">
               <img src="./images/icons/phone.svg" alt="phone logo" />
-              <span class="header__phonenumber">+7 777 123 45 67</span>
+              <a href="tel:+77771234567" class="header__phonenumber">+7 777 123 45 67</a>
             </div>
+
             <div class="header__social-media">
-              <img
+              <div class="header__social-item"><a class="header__social-link" href="https://www.instagram.com">
+                <img
                 src="./images/icons/instagram.svg"
                 alt="logo instagram"
-                class="header__social-item"
+                class="header__social-img"
               />
-              <img
+            </a></div>
+              <div class="header__social-item"><a class="header__social-link" href="https://www.telegram.org/">
+                <img
                 src="./images/icons/telegram.svg"
                 alt="logo telegram"
-                class="header__social-item"
+                class="header__social-img"
               />
-              <img
+            </a></div>
+              <div class="header__social-item"><a class="header__social-link" href="https://www.whatsapp.com/">
+                <img
                 src="./images/icons/whatsapp.svg"
                 alt="logo whatsapp"
-                class="header__social-item"
+                class="header__social-img"
               />
+            </a></div> 
             </div>
+
           </div>
         </div>
       </div>
@@ -149,6 +159,21 @@
       <div class="container">
         <div class="gallery__inner">
           <h2 class="title gallery__title">Gallery</h2>
+
+          <div class="gallery__carousel">
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/01.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/02.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/03.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/04.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/05.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/06.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/07.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/08.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/10.jpg" alt="nail style"></div> 
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/01.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/11.jpg" alt="nail style"></div>
+            <div class="gallery__item"><img class="gallery__img" src="./images/nails/12.jpg" alt="nail style"></div>
+          </div>
         </div>
       </div>
     </section>
@@ -159,6 +184,7 @@
           <h2 class="title price__title">Price</h2>
 
           <div class="price__items">
+
             <div class="price__item">
               <span class="price__name"> spring-summer </span>
               <h3 class="price__kind">Manicure</h3>
@@ -174,12 +200,12 @@
               <button class="price__btn btn">book now</button>
             </div>
 
-            <div class="price__item">
+            <div class="price__item price__middle">
               <span class="price__name"> spring-summer </span>
               <h3 class="price__kind">Manicure</h3>
               <div class="price__hr"></div>
               <div class="price__count">
-                <img src="./images/icons/tenge.svg" alt="tenge" /> 3500
+                <img src="./images/icons/tenge.svg" alt="tenge" /> 4500
               </div>
               <p class="price__description">
                 Taking a good care of your feet and nails is essential. We
@@ -214,7 +240,8 @@
           <h2 class="title testimonials__title">Testimonials</h2>
           <div class="testimonials__carousel">
             <div class="testimonials__items">
-              <div class="testimonials__item">
+              <div>
+                <div class="testimonials__item">
                 <img
                   src="./images/testimonials1.png"
                   alt="avatar"
@@ -227,6 +254,41 @@
                   treatments.
                 </p>
                 <span class="testimonials__name">Joane Stone</span>
+              </div>
+              </div>
+              
+              <div>
+                <div class="testimonials__item">
+                <img
+                  src="./images/testimonials2.png"
+                  alt="avatar"
+                  class="testimonials__avatar"
+                />
+                <p class="testimonials__text">
+                  While hand and nail care is usually restricted to just a few
+                  services, we’ve got a wide selection of various pedicure
+                  methods, just as well as the overall hands skin care
+                  treatments.
+                </p>
+                <span class="testimonials__name">Joane Stone</span>
+              </div>
+              </div>
+
+              <div>
+                <div class="testimonials__item">
+                <img
+                  src="./images/testimonials3.png"
+                  alt="avatar"
+                  class="testimonials__avatar"
+                />
+                <p class="testimonials__text">
+                  While hand and nail care is usually restricted to just a few
+                  services, we’ve got a wide selection of various pedicure
+                  methods, just as well as the overall hands skin care
+                  treatments.
+                </p>
+                <span class="testimonials__name">Joane Stone</span>
+              </div>
               </div>
             </div>
           </div>
@@ -262,13 +324,21 @@
                     ></span
                   >
                 </li>
+                <li class="footer__contact">
+                  <img src="./images/icons/marker.svg" alt="marker" />
+                  <span class="footer__phonenumber">
+                    <a href="#" class="footer__link-phone"
+                      >New Jersey</a
+                    ></span
+                  >
+                </li>
               </ul>
             </div>
             <div class="footer__item">
               <div class="footer__socialnets">
                 <a href="https://www.instagram.com/" class="footer__social-link"><div class="footer__socialnet instagram"></div></a>
                 <a href="https://www.whatsapp.com/" class="footer__social-link"><div class="footer__socialnet whatsapp"></div></a>
-                <a href="https://www.telegram.com/" class="footer__social-link"><div class="footer__socialnet telegram"></div>
+                <a href="https://www.telegram.org/" class="footer__social-link"><div class="footer__socialnet telegram"></div>
               </div></a>
             </div>
           </div>
@@ -284,5 +354,10 @@
         </div>
       </div>
     </footer>
+
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="slick/slick.min.js"></script>
+<script type="text/javascript" src="script.js"></script>
   </body>
 </html>
