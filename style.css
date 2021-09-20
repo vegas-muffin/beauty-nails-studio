@@ -336,6 +336,10 @@ body {
 }
 
 .price__items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .price__item {
@@ -345,12 +349,13 @@ body {
   border-radius: 25px;
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   padding: 80px 15px 45px 15px;
 }
 
 .price__name {
-  font-family: Poppins;
+  font-family: "Poppins", sans-serif;
   font-style: normal;
   font-weight: bold;
   font-size: 14px;
@@ -362,7 +367,7 @@ body {
 }
 
 .price__kind {
-  font-family: PT Serif;
+  font-family: "PT Serif", serif;
   font-style: normal;
   font-weight: bold;
   font-size: 36px;
@@ -380,8 +385,12 @@ body {
   background: #ffffff;
 }
 
-.price__btn {
-  color: #f64a5f;
+.price__count {
+  font-size: 100px;
+  line-height: 0.8;
+  font-family: "Poppins", sans-serif;
+  color: #ffffff;
+  margin-top: 30px;
 }
 
 .price__description {
@@ -394,6 +403,10 @@ body {
   margin-bottom: 45px;
 }
 
+.price__btn {
+  color: #f64a5f;
+  margin-top: 35px;
+}
 /* testimonials */
 
 .testimonials {
@@ -402,10 +415,177 @@ body {
   background-size: cover;
 }
 
+.testimonials__inner {
+  padding-top: 110px;
+  padding-bottom: 90px;
+}
+
 .testimonials__title {
   width: 50%;
   text-align: center;
   margin-top: 0;
   margin-bottom: 50px;
   transform: translateX(50%);
+}
+
+.testimonials__item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.testimonials__text {
+  width: 842px;
+  font-family: "Poppins", sans-serif;
+  font-size: 20px;
+  line-height: 30px;
+  text-align: center;
+  color: #757575;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.testimonials__name {
+  font-family: "PT Serif", serif;
+  font-weight: bold;
+  font-size: 20px;
+  line-height: 26px;
+  text-align: center;
+  color: #f64a5f;
+}
+
+/* FOOTER */
+
+.instagram {
+  background-image: url(./images/icons/instagram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+.whatsapp {
+  background-image: url(./images/icons/whatsapp.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+.telegram {
+  background-image: url(./images/icons/telegram.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 14px;
+}
+
+.footer {
+}
+
+.footer__logo {
+  font-family: "PT Serif", serif;
+  font-size: 35px;
+  font-weight: bold;
+  margin-bottom: 45px;
+}
+
+.footer__logosvg {
+  width: 60px;
+}
+
+.footer__text {
+  font-family: "Poppins", sans-serif;
+  color: #1d1d1d;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0px;
+}
+
+.footer__phonenumber {
+  color: #f64a5f;
+  padding-left: 10px;
+}
+
+.footer__link-phone {
+  text-decoration: none;
+  color: #f64a5f;
+}
+
+.footer__socialnets {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 200px;
+  width: 100%;
+}
+
+.footer__socialnet {
+  border-radius: 50%;
+  height: 40px;
+  width: 40px;
+  background-color: #f64a5f;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+
+.footer__socialnet:hover {
+  background-color: #000;
+}
+
+.footer__socialnet:active {
+  transform: scale(0.9);
+}
+
+.footer__contacts {
+  padding: 0;
+  font-weight: 400;
+  font-style: normal;
+  font-family: "Poppins", sans-serif;
+  font-size: 17px;
+  line-height: 1.3;
+  letter-spacing: 0px;
+}
+
+.footer__contact {
+  list-style-type: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.footer__items {
+  display: flex;
+  flex-direction: row;
+  padding-top: 45px;
+  padding-bottom: 45px;
+}
+
+.footer__item {
+  max-width: 390px;
+  width: 100%;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.footer__item-middle {
+  border-left: 1px solid rgba(67, 79, 83, 0.3);
+  border-right: 1px solid rgba(67, 79, 83, 0.3);
+}
+
+.footer__rights {
+  background: #000000;
+  height: 75px;
+}
+
+.footer__rights-inner {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 75px;
+}
+
+.footer__allright {
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  font-size: 12px;
+  line-height: 18px;
+  color: #bdbdbd;
 }
