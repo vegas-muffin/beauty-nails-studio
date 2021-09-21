@@ -4,10 +4,12 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="slick.css">
-    <link rel="shortcut icon" href="./images/icons/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="tablet.css" media="only screen and (max-width:1199px)">
+    <link rel="stylesheet" href="mobile.css" media="(min-width: 320px) and (max-width: 767px)">
+    <link rel="stylesheet" href="./slick/slick.css">
     <title>Alina Nails Kostanay</title>
   </head>
   <body>
@@ -84,7 +86,7 @@
     <section class="promo">
       <div class="container">
         <div class="promo__inner">
-          <h2 class="title promo__title">
+          <h2 class=" promo__title">
             Hundreds of Colors, Organic Nail Polish!
           </h2>
           <p class="promo__text">
@@ -161,7 +163,8 @@
           <h2 class="title gallery__title">Gallery</h2>
 
           <div class="gallery__carousel">
-            <div class="gallery__item"><img class="gallery__img" src="./images/nails/01.jpg" alt="nail style"></div>
+            <div class="gallery__row">
+              <div class="gallery__item"><img class="gallery__img" src="./images/nails/01.jpg" alt="nail style"></div>
             <div class="gallery__item"><img class="gallery__img" src="./images/nails/02.jpg" alt="nail style"></div>
             <div class="gallery__item"><img class="gallery__img" src="./images/nails/03.jpg" alt="nail style"></div>
             <div class="gallery__item"><img class="gallery__img" src="./images/nails/04.jpg" alt="nail style"></div>
@@ -173,6 +176,9 @@
             <div class="gallery__item"><img class="gallery__img" src="./images/nails/01.jpg" alt="nail style"></div>
             <div class="gallery__item"><img class="gallery__img" src="./images/nails/11.jpg" alt="nail style"></div>
             <div class="gallery__item"><img class="gallery__img" src="./images/nails/12.jpg" alt="nail style"></div>
+
+            </div>
+            
           </div>
         </div>
       </div>
@@ -310,8 +316,8 @@
                 />
                 Nails
               </div>
-              <span class="footer__text"
-                >Hundreds of Colors, Organic Nail Polish!</span
+              <p class="footer__text"
+                >Hundreds of Colors, Organic Nail Polish!</p
               >
             </div>
             <div class="footer__item footer__item-middle">
