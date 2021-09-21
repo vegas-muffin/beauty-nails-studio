@@ -3,7 +3,9 @@
     flex-direction: column;
   }
 
-  
+  .price__item {
+    margin-bottom: 30px;
+  }
 
   /* FOOTER */
   .footer__item {
