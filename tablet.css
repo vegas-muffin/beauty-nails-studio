@@ -1,0 +1,13 @@
+@media (max-width: 1199px) {
+  .price__items {
+    flex-direction: column;
+  }
+
+  
+
+  /* FOOTER */
+  .footer__item {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}

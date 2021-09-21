@@ -1,5 +1,5 @@
 $(document).ready(function () {
-  $(".gallery__carousel").slick({
+  $(".gallery__row").slick({
     infinite: true,
     slidesToShow: 3,
     slidesToScroll: 1,
@@ -30,7 +30,6 @@ $(document).ready(function () {
     infinite: true,
     slidesToShow: 1,
     slidesToScroll: 1,
-    autoplay: true,
     prevArrow:
       '<div><button class="carousel__arrow left slick-arrow slick-prev"></button></div>',
     nextArrow:
